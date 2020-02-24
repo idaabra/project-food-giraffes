@@ -6,9 +6,11 @@ During the session your team will be challenged to build a website that lists re
 
 Your page will be built based on a random combination of cuisine, city, and design provided by the Technigo team on site. All data should be fetched from the [Zomato API.](https://developers.zomato.com/)  
 
-## Your team's combination: [cuisine] restaurants in [city]
+## Your team's combination: Japanese food in London, UK
 
-Your team has been tasked with using the Zomato API to list [cuisine] restaurants in [city]
+Your team has been tasked with using the Zomato API to list Japanese food in London, UK in the style of the Foodora site:
+
+![foodora](https://i.imgur.com/1QvkO8p.jpg)
 
 ## How to complete this task
 
@@ -18,11 +20,11 @@ We have a very limited time-frame for this project, so we want you to read about
 
 ### Step 1
 
-Each member of your team should clone (NOT FORK!) the correct repo for your team.
+XX Each member of your team should clone (NOT FORK!) the correct repo for your team.
 
 ### Step 2
 
-Togeteher as a mob, do the foundations of the project together. Make sure that you have fetched from the API and presented all data on the page in a suitable HTML structure which you all agree on. You can also use one person's code from the practices as long as **everyone** understands the code. No styling is needed at this point. 
+XX Togeteher as a mob, do the foundations of the project together. Make sure that you have fetched from the API and presented all data on the page in a suitable HTML structure which you all agree on. You can also use one person's code from the practices as long as **everyone** understands the code. No styling is needed at this point. 
 
 You should now have data from at least 10 restaurants from the `/search` endpoint on your page, and include the following data: 
 
@@ -32,7 +34,7 @@ You should now have data from at least 10 restaurants from the `/search` endpoin
 * An image (you choose which image you'd like to display from the response)
 * Either the `aggregate_rating` or the `rating_text` for that restaurant
 
-### Step 3 
+git st### Step 3 
 
 Divide into pairs or groups of three and choose freely from the selection of features below. The groups will work separatley on features in their own "feature branch" and we will help you to merge this into the master branch before the demo. Of course; have communication within the group and feel free to merge and commit code when you feel that the time is right. Help each-other and share knowledge in the team is always encouraged. 
 
@@ -68,13 +70,7 @@ Make it so your users can choose to only show restaurants with good ratings.
 
 To work on mobile, desktop or tablet. 
 
-Feel free to challenge yourself and team to come up with more or other features! This is your group project – you decided. 
-
-### Feature freeze 
-
-There's a thing called [feature freeze.](https://en.wikipedia.org/wiki/Freeze_(software_engineering)), our feature freeze will be 2 hours before the demo. That's when it's time for you to merge your feature branches into the master branch. Our teachers will have a bit of a though time, since it's guaranteed there will be conflicts in your code (which happens when the same code is edited in two different branches). So expect merge conflicts at this point!
-
-Once all the feature branches are merged into master, you're free to try and make smaller changes to your site and fix bugs - but be careful to make sure it'll be demoable. 
+Feel free to challenge yourself and team to come up with more or other features! This is your group project – you decide.
 
 Work as a team!  
 

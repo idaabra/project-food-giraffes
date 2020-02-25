@@ -38,10 +38,10 @@ fetch(apiData, {
 
       foodReview.innerHTML += `<div id="children">
       <img src="${restImage}"></img>
-      <p>${restaurantName}</p>
-      <p>${address}</p>
-      <p>${averageCost}</p>
-      <p>${ratings}/5.0</p>
+      <p class="name text">${restaurantName}</p>
+      <p class="text">${address}</p>
+      <p class="text">${averageCost}</p>
+      <p class="text">${ratings}/5.0</p>
       </div>`
 
       // let newFilteredPriceList = averageCost.filter(item => items.average_cost_for_two)

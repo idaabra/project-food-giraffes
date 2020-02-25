@@ -9,6 +9,7 @@ let averageCost
 let address
 let restImage
 let ratings
+let restaurantsArrays
 
 
 // DOM
@@ -22,6 +23,15 @@ const priceRange = () => {
   ) 
 }
 
+
+// Sorting on rating
+const sortRatings = () => {
+  ourArray.sort((a,b) => {
+    return b.restaurant.user_rating.aggregate_rating - a.restaurant.user_rating.aggregate_rating
+  })
+}
+
+
 // JSON
 fetch(apiData, { headers: { "user-key": apiKey } })
   .then(response => response.json())
@@ -30,8 +40,6 @@ fetch(apiData, { headers: { "user-key": apiKey } })
     console.log(json)
 
     ourArray = json.restaurants
-    // priceRange(ourArray)
-
     printFood(ourArray)
     })
 
@@ -62,7 +70,17 @@ fetch(apiData, { headers: { "user-key": apiKey } })
     })
   }
 
+
+
+// On click
   const clickedPriceSort = () => {
     priceRange()
     printFood(ourArray)
   }
+    
+
+const clickedRating = () => {
+  sortRatings()
+  printFood(ourArray)
+} 
+document.getElementById('sortRating').onclick = clickedRating

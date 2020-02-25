@@ -61,12 +61,12 @@ fetch(apiData, { headers: { "user-key": apiKey } })
         ratings = item.restaurant.user_rating.aggregate_rating
         // console.log(ratings)
           foodReview.innerHTML += `<div id="children">
-        <img src="${restImage}"></img>
-        <p>${restaurantName}</p>
-        <p>${address}</p>
-        <p>${averageCost}</p>
-        <p>${ratings}/5.0</p>
-        </div>`
+          <img src="${restImage}"></img>
+          <p class="name text">${restaurantName}</p>
+          <p class="text">${address}</p>
+          <p class="text">Average Price for Two: £${averageCost}</p>
+          <p class="text">★ ${ratings}/5.0 </p>
+          </div>`
     })
   }
 
@@ -84,3 +84,4 @@ const clickedRating = () => {
   printFood(ourArray)
 } 
 document.getElementById('sortRating').onclick = clickedRating
+      

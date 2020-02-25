@@ -5,9 +5,13 @@ const cuisineType = 60
 const apiData = `https://developers.zomato.com/api/v2.1/search?entity_id=${cityName}&entity_type=city&cuisines=${cuisineType}`
 
 // DOM
-const foodReview = document.getElementById("foodReview") 
+const foodReview = document.getElementById("foodReview")
 
-fetch(apiData, {headers:{ "user-key": apiKey}})
+fetch(apiData, {
+    headers: {
+      "user-key": apiKey
+    }
+  })
   .then(response => {
     return response.json();
   })
@@ -39,5 +43,12 @@ fetch(apiData, {headers:{ "user-key": apiKey}})
       <p>${averageCost}</p>
       <p>${ratings}/5.0</p>
       </div>`
+
+      // let newFilteredPriceList = averageCost.filter(item => items.average_cost_for_two)
+
+      // console.log(averageCost)
     })
+    let newFilteredPriceList = json.restaurants.filter(item => item.average_cost_for_two)
+
+    console.log(newFilteredPriceList)
   })

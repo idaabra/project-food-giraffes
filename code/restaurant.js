@@ -72,13 +72,13 @@ fetch(apiData, { headers: { "user-key": apiKey } })
 
 
 
-// On click
+// On click - price
   const clickedPriceSort = () => {
     priceRange()
     printFood(ourArray)
   }
     
-
+// On click - rating
 const clickedRating = () => {
   sortRatings()
   printFood(ourArray)
